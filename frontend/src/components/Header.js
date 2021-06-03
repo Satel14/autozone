@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Menu from '../svg/bars-solid.svg'
-import Close from '../svg/times-solid.svg'
-import CartIcon from '../svg/shopping-cart-solid.svg'
+import Menu from './svg/bars-solid.svg'
+import Close from './svg/times-solid.svg'
+import CartIcon from './svg/shopping-cart-solid.svg'
 import {Link} from 'react-router-dom'
 import './css/Header.css'
 import {DataContext} from './Context'
@@ -29,7 +29,7 @@ export class Header extends Component {
                     <img src={Menu} alt="" width="20"/>
                 </div>
                 <div className="logo">
-                    <h1><Link to="/">Nike</Link></h1>
+                    <h1><Link to="/">Cars</Link></h1>
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>
@@ -53,5 +53,7 @@ export class Header extends Component {
         )
     }
 }
+
+
 
 export default Header
