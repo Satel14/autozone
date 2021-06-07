@@ -29,7 +29,9 @@ export class Header extends Component {
                     <img src={Menu} alt="" width="20"/>
                 </div>
                 <div className="logo">
-                    <h1><Link to="/">Cars</Link></h1>
+                    <h1><Link to="/"></Link>
+                    <img src="http://livedemo00.template-help.com/wt_prod-14633/images/logo.png" alt="" />
+                    </h1>
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>

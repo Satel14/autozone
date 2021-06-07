@@ -5,6 +5,8 @@ import Section from './components/Section'
 import {DataProvider} from './components/Context'
 import Main from './components/Main'
 import Body from './components/Body'
+import Footer from './components/Footer'
+import Last from './components/Last'
 
 
 class App extends React.Component{
@@ -19,6 +21,8 @@ class App extends React.Component{
           <Main />
           <Body />
         </div>
+        <Footer/>
+        <Last />
       </DataProvider>
     );
   }
