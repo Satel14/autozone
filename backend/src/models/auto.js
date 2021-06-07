@@ -10,10 +10,6 @@ export default model('Auto', new Schema({
     type: Boolean,
     default: () => false,
   },
-  kilometrage: {
-    type: Number,
-    default: () => 0,
-  },
   price: {
     type: Number,
     require: true,
@@ -32,22 +28,9 @@ export default model('Auto', new Schema({
     ref: 'Fuel',
     require: true,
   },
-  colorIDList: {
-    type: [Schema.Types.ObjectId],
+  colorID: {
+    type: Schema.Types.ObjectId,
     ref: 'Color',
     require: true,
   },
-  imageID: {
-    type: Schema.Types.ObjectId,
-    ref: 'Image',
-    require: true,
-  },
-  description: {
-    type: String,
-    default: () => '',
-  },
-  publishDate: {
-    type: Date,
-    default: new Date(),
-  },
-}))
+}), 'auto')

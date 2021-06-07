@@ -1,8 +1,9 @@
 import { Schema, model } from 'mongoose'
 
 export default model('Image', new Schema({
-  path: {
-    type: String,
+  file: {
+    type: Schema.Types.Buffer,
+    contentType: String,
     unique: true,
     required: true,
   },
