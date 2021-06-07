@@ -10,6 +10,10 @@ export default model('Auto', new Schema({
     type: Boolean,
     default: () => false,
   },
+  kilometrage: {
+    type: Number,
+    default: () => 0,
+  },
   price: {
     type: Number,
     require: true,
@@ -33,4 +37,9 @@ export default model('Auto', new Schema({
     ref: 'Color',
     require: true,
   },
-}), 'auto')
+  imageID: {
+    type: Schema.Types.ObjectId,
+    ref: 'Image',
+    require: true,
+  },
+}))

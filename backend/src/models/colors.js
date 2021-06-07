@@ -6,4 +6,8 @@ export default model('Color', new Schema({
     unique: true,
     required: true,
   },
-}), 'color')
+  rgb: {
+    type: String,
+    required: true,
+  },
+}))

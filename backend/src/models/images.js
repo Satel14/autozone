@@ -1,9 +1,9 @@
 import { Schema, model } from 'mongoose'
 
-export default model('Fuel', new Schema({
-  name: {
+export default model('Image', new Schema({
+  path: {
     type: String,
     unique: true,
     required: true,
   },
-}), 'fuel')
+}))

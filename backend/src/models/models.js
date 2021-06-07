@@ -11,4 +11,4 @@ export default model('Model', new Schema({
     unique: true,
     required: true,
   },
-}), 'model')
+}))
