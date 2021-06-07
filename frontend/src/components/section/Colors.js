@@ -6,7 +6,7 @@ export class Colors extends Component {
         return (
             <div className="colors">
                 {
-                    colors.map((color,index) =>(
+                    colors.map((color,index) => (
                         <button key={index} style={{background: color}}></button>
                     ))
                 }
