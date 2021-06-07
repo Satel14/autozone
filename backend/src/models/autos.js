@@ -32,8 +32,8 @@ export default model('Auto', new Schema({
     ref: 'Fuel',
     require: true,
   },
-  colorID: {
-    type: Schema.Types.ObjectId,
+  colorIDList: {
+    type: [Schema.Types.ObjectId],
     ref: 'Color',
     require: true,
   },
