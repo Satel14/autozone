@@ -9,7 +9,7 @@ export class DataProvider extends Component {
             {
                 "_id": "1",
                 "title": "BMW",
-                "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80",
+                "src": "https://wallpapercave.com/wp/wp2574805.jpg",
                 "description": "BMW AG, is a German automobile.",
                 "content": "Bayerische Motoren Werke AG, commonly known as Bavarian Motor Works, BMW or BMW AG, is a German automobile, motorcycle and engine manufacturing company founded in 1916. BMW is headquartered in Munich, Bavaria. It also owns and produces Mini cars, and is the parent company of Rolls-Royce Motor Cars.",
                 "price": 40000,

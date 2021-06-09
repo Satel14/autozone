@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header'
 import Section from './components/Section'
@@ -7,10 +7,11 @@ import Main from './components/Main'
 import Body from './components/Body'
 import Footer from './components/Footer'
 import Last from './components/Last'
+import './index.css'
 
 
-class App extends React.Component{
-  render(){
+
+const App = () =>{
     return(
       <DataProvider>
         <div className="app">
@@ -26,6 +27,6 @@ class App extends React.Component{
       </DataProvider>
     );
   }
-}
 
 export default App;
+

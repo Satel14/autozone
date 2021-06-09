@@ -4,6 +4,10 @@ header{
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #f7f6f6;
 }
 header .logo a{
     text-decoration: none;

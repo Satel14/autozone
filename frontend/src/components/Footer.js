@@ -5,7 +5,7 @@ import './css/Footer.css'
 export class Footer extends Component {
     render() {
         return (
-<div className="section pre-footer novi-background bg-cover">
+<div id="foot" className="section pre-footer novi-background bg-cover">
     <div className="container">
 
       <div className="row">

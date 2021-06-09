@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Menu from './svg/bars-solid.svg'
 import Close from './svg/times-solid.svg'
 import CartIcon from './svg/shopping-cart-solid.svg'
-import {Link} from 'react-router-dom'
 import './css/Header.css'
 import {DataContext} from './Context'
+import { Link as Link1 } from 'react-scroll';
+import { Link as Link2 } from 'react-router-dom';
 
 
 
@@ -29,26 +30,26 @@ export class Header extends Component {
                     <img src={Menu} alt="" width="20"/>
                 </div>
                 <div className="logo">
-                    <h1><Link to="/"></Link>
+                    <h1><Link2 to="/"></Link2>
                     <img src="http://livedemo00.template-help.com/wt_prod-14633/images/logo.png" alt="" />
                     </h1>
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/product">Product</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/login">Login / Register</Link></li>
+                        <li><Link1 to="welcome" smooth={true} duration={2000}>Home</Link1></li>
+                        <li><Link2 to="/product">Product</Link2></li>
+                        <li><Link1 to="best" smooth={true} duration={2000}>Catalog</Link1></li>
+                        <li><Link1 to="foot" smooth={true} duration={2000}>About</Link1></li>
+                        <li><Link2 to="/login">Login / Register</Link2></li>
                         <li className="close" onClick={this.menuToggle}>
                             <img src={Close} alt="" width="20"/>
                         </li>
                     </ul>
                     <div className="nav-cart">
                         <span>{cart.length}</span>
-                        <Link to="/cart">
+                        <Link2 to="/cart">
                             <img src={CartIcon} alt="" width="20"/>
-                        </Link>
+                        </Link2>
                     </div>
                 </nav>
             </header>
