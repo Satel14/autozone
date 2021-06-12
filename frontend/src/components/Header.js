@@ -7,10 +7,10 @@ import {DataContext} from './Context'
 import { Link as Link1 } from 'react-scroll';
 import { Link as Link2 } from 'react-router-dom';
 
-
-
 export class Header extends Component {
+    
     static contextType = DataContext;
+    
 
     state = {
         toggle: false
@@ -30,17 +30,17 @@ export class Header extends Component {
                     <img src={Menu} alt="" width="20"/>
                 </div>
                 <div className="logo">
-                    <h1><Link2 to="/"></Link2>
-                    <img src="http://livedemo00.template-help.com/wt_prod-14633/images/logo.png" alt="" />
+                    <h1><Link2 to="/shopping-cart-react"> <img src="http://livedemo00.template-help.com/wt_prod-14633/images/logo.png" alt="" /></Link2>
+                   
                     </h1>
                 </div>
                 <nav>
+                    
                     <ul className={toggle ? "toggle" : ""}>
                         <li><Link1 to="welcome" smooth={true} duration={2000}>Home</Link1></li>
                         <li><Link2 to="/product">Product</Link2></li>
                         <li><Link1 to="best" smooth={true} duration={2000}>Catalog</Link1></li>
                         <li><Link1 to="foot" smooth={true} duration={2000}>About</Link1></li>
-                        <li><Link2 to="/login">Login / Register</Link2></li>
                         <li className="close" onClick={this.menuToggle}>
                             <img src={Close} alt="" width="20"/>
                         </li>
