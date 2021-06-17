@@ -11,6 +11,7 @@ import './index.css';
 import { useStateValue } from './components/StateProvider'
 import Login from './components/Login'
 import Home from './components/Home'
+import Modal from './components/Modal'
 
 
 
@@ -27,6 +28,7 @@ const App = () =>{
             {!user ? (<Login />):(
             <Home />
           )}
+          <Modal />
             <Section />
           </Router>
           <Main />
